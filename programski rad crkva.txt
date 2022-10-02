@@ -1,0 +1,4 @@
+u headeru je navbar i logo koji nas vodi na naslovnu stranu
+futeru socialna dugmad i deo iz kontak stranice plus ifo o nama\
+naslovna slider sa strelicama sa strane ispod toga dva dugmeta za kalendar i raspored bogosluzenja, plus ispod toga vesti 4 komada
+istorijat,kontakt,vesti,svestenstvo,galerija,hor... raditi po ugledu na druge sajtove
