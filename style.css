@@ -752,3 +752,25 @@ blockquote {
   padding: 60px 0;
 
 }
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  margin:center;
+  border-radius: 30%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background:white;
+  color: #0079af;
+}
+.fa-instagram{
+  background:white;
+  color: #0079af;
+}
+.fa-google{
+  background:white;
+  color: #0079af;
+}
