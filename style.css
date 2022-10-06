@@ -1,37 +1,7 @@
 body{
-  margin-top:20px;
   background:#DCDCDC;
   font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
 }
-
-header, header .top_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-header .top_header {
-  -ms-flex-pack: end;
-  padding-bottom: 10px;
-  width: 100%;
-}
-
-header .navbar, header .top_header {
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-}
-
 .aligncenter {
   display: block;
   margin: .5rem auto;
@@ -740,37 +710,12 @@ blockquote {
   background-color: #b6933e;
   color: #fff;
 }
-
-
-
-::after, ::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .footer {
   padding: 60px 0;
-
+  position:fixed;
+  width:100%;
+  bottom: 0;
 }
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
-  margin:center;
-  border-radius: 30%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background:white;
-  color: #0079af;
-}
-.fa-instagram{
-  background:white;
-  color: #0079af;
-}
-.fa-google{
-  background:white;
-  color: #0079af;
+.nav-link{
+  color:white
 }
