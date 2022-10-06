@@ -13,15 +13,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- 
         JavaScript Bundle with Popper 
     -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     
     <!--
         Ime sajta
     -->
-    <title>Crkva Sveta Petka</title>
+    <title>Храм Света Петка</title>
 </head>
 <body>
 <!--
@@ -31,32 +35,45 @@
 
 
 -->
-    <header>
-        <div class="container header-container">
-            <nav class="navbar primary_navigation" style="background-image: url(slike/footer.jpg);">
-                <a class="brand" href="#">Crkva Sveta Petka</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="menu-item depth-0 menu-item--page menu-item--active">
-                                <a class="nav-link" href="#">Početna</a>
-                            </li>
-                            <li class="menu-item depth-0 menu-item--custom menu-item-has-children">
-                                <a class="nav-link" href="vesti.html">Vesti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Istorijat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Galerija</a>
-                            </li>
-                        </ul>
-                </div>
-            </nav> 
-        </div>
-    </header>
+<header id="header" class="bg-deffer w-100 " style="background-image: url(slike/footer.jpg);">
+    <div class="container-fluid">
+        <nav class="navbar justify-content-center" id="navbar">
+            <a class="brand" href="index.html">Храм Света Петка</a>
+            <!--button class="navbar-toggler" id="meni" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="padajuci()">
+                <span class="navbar-toggler-icon"></span>
+            </button--->
+            <!--div class="collapse navbar-collapse" id="padajuci-meni"--->
+            <div>       
+            <ul class="nav">
+                        <li class="menu-item depth-0 menu-item--page menu-item--active">
+                            <a class="nav-link" href="">Насловна</a>
+                        </li>
+                        <li class="menu-item depth-0 menu-item--custom menu-item-has-children">
+                            <a class="nav-link" href="vesti.html">Вести</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="istorijat.html">О Храму</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="svestenstvo.html">Свештенство</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hor.html">Хор</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html">Галерија</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kalendar.html">Календар</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Контакт</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav> 
+    </div>
+</header>
 
 <!--
     
@@ -65,45 +82,27 @@
 
 
 -->
-
-    <div class="container">
-        <div name="slider">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators mb-1">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="slike/IMG_2545.JPG" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="slike/IMG_2555.JPG" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                    <img class="d-block w-100" src="slike/IMG_2564.JPG" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="slike/IMG_2566.JPG" alt="Fourth slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="slike/IMG_2586.JPG" alt="Fifth slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                  </a>
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="slike/IMG_2545.JPG" class="d-block w-100" alt="First">
+              </div>
+              <div class="carousel-item">
+                <img src="slike/IMG_2555.JPG" class="d-block w-100" alt="Second">
+              </div>
+              <div class="carousel-item">
+                <img src="slike/IMG_2564.JPG" class="d-block w-100" alt="Third">
+              </div>
+              <div class="carousel-item">
+                <img src="slike/IMG_2566.JPG" class="d-block w-100" alt="Third">
+              </div>
+              <div class="carousel-item">
+                <img src="slike/IMG_2586.JPG" class="d-block w-100" alt="Third">
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
+    </section>
 
 <!--
     =================================================================================================
@@ -122,8 +121,8 @@
                     <p style="text-align: left;"><strong>С вером у Бога</strong></p>
                 </div>
                 <div class="actions">
-                    <a href="raspored_bogosluzenja.html">Распоред Богослужења</a>
-                    <a href="#">Календар на пример</a>
+                    <a href="raspored_bogosluzenja.html" onclick="raspored()">Распоред Богослужења</a>
+                    <a href="ceremonije_i_obredi.html" onclick="ceremonija()">Церемоније и обреди</a>
                 </div>
             </div>
         </div>
@@ -149,18 +148,16 @@
 
 
 -->
-    <div class="container">
-        <div class="col-md-12 col-lg-12">
+<section>
+<div class="container">
+    <h2 style="text-align: center;">Новости</h2>
+    <div class="row"> 
+        <div class="col-md-6 col-lg-6">
             <article class="post vt-post">
-                <div class="row">
-                    <div class="col">
-                        <h2 style="text-align: center;">OBJAVE NA STRANICI</h2>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
                         <div class="post-type post-img">
-                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-responsive" alt="image post"></a>
+                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-responsive" alt="image post"></a>
                         </div>
                         <div class="author-info author-info-2">
                             <ul class="list-inline">
@@ -172,6 +169,98 @@
                                 <li>
                                     <div class="info">
                                         <p>Comments:</p>
+                                        <strong>127</strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                        <div class="caption">
+                            <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                            <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <a class="btn btn-default" href="#" role="button">Read More</a> </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post vt-post">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                        <div class="post-type post-img">
+                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="img-responsive" alt="image post"></a>
+                        </div>
+                        <div class="author-info author-info-2">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="info">
+                                        <p>Posted on:</p>
+                                        <strong>Mar 21, 2015</strong></div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <p>Comments:</p>
+                                        <strong>127</strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                        <div class="caption">
+                            <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                            <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            <a class="btn btn-default" href="#" role="button">Read More</a> </div>
+                    </div>
+                </div>
+            </article>
+            <article class="post vt-post">
+                <div class="row"> 
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                        <div class="post-type post-img">
+                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-responsive" alt="image post"></a>
+                        </div>
+                        <div class="author-info author-info-2">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="info">
+                                        <p>Објављено:</p>
+                                        <strong>Mar 21, 2015</strong></div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <p>Коментари:</p>
+                                        <strong>127</strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                        <div class="caption">
+                            <h3 class="md-heading"><a href="#">The Heading Text Size Should Match</a></h3>
+                            <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. </p>
+                            <a class="btn btn-default" href="#" role="button">Read More</a> </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-6 col-lg-6">
+           
+            <article class="post vt-post">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                        <div class="post-type post-img">
+                            <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-responsive" alt="image post"></a>
+                        </div>
+                        <div class="author-info author-info-2">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="info">
+                                        <p>Објављено:</p>
+                                        <strong>Mar 21, 2015</strong></div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <p>Коментари:</p>
                                         <strong>127</strong></div>
                                 </li>
                             </ul>
@@ -249,21 +338,11 @@
                     </div>
                 </div>
             </article>
-            <div class="pagination-wrap">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
-            </div>
-            <div class="clearfix"></div>
-        </div>
+           
+        </div> 
     </div>
-
+</div>
+</section>
 <!--Footer-->
 
   <footer id="footer" class="bg-deffer w-100 mt-2" style="background-image: url(slike/footer.jpg);">
@@ -281,16 +360,16 @@
                     </div>
                     <div class="col-10 col-md-8 col-lg-4 m-2">
                         <p class="paragraf text-white text-right">
-                            <br />Kontakt
-                            <br />Broj telefona: 011 555333
-                            <br />Email: ordinacija@gmail.com
-                            <br />Adresa: Nema ulice BB, Novi Beograd
+                            <br />Контакт
+                            <br />Број телефона: 011 555333
+                            <br />Е-пошта: ordinacija@gmail.com
+                            <br />Адреса: Nema ulice BB, Novi Beograd
                         </p>
                     </div>
             </div>
         </div>
     
-    </footer>
+</footer>
 
 </body>
 </html>
