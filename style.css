@@ -9,13 +9,13 @@ body{
 }
 
 a {
-  color: #b6933e;
+  color:#c7a658;
 }
 
 a:hover{
   text-decoration: underline;
   transition: all .3s ease;
-  color: #b6933e;
+  color:#c7a658;
 
 }
 
@@ -663,53 +663,32 @@ blockquote {
 .pagination {
   margin: 0px;
 }
+.carousel-inner{
+  width:68%;
+  margin-top:1%;
+  margin-left:16%;
+}
+#sverom{
+  font-size: 30px;
+}
+#hram{
+  font-size: 60px;
+}
 
 .hero .hero-content {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 10%;
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.hero .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  margin-top: 30px;
-  -webkit-column-gap: 16px;
-  -moz-column-gap: 16px;
-  column-gap: 16px;
-}
-
 .hero {
-  color: #fff;
+  color:#c7a658;
+ 
 }
 
-.hero .actions a:first-of-type {
-  background-color: #b6933e;
-  color: #fff;
-}
-
-.hero .actions a {
-  width: 215px;
-  max-width: 100%;
-  border: 1px solid #b6933e;
-  padding: 12px 12px 14px;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: .11px;
-}
-
-.hero .actions a:first-of-type {
-  background-color: #b6933e;
-  color: #fff;
-}
 .footer {
   padding: 60px 0;
   position:fixed;
