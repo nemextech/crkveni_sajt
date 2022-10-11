@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   background:#DCDCDC;
   font-size: 1rem;
@@ -17,6 +21,36 @@ a:hover{
   transition: all .3s ease;
   color:#c7a658;
 
+}
+
+.navbar a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dugme{
+  float: left;
+  padding: 10px;
+  background: #dcdcdc;
+  color: white;
+  font-size: 17px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.dugme:hover{
+  color: #091a46;
+  background-color: #c7a658;
+}
+
+.input-group-text::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .content {
@@ -668,6 +702,7 @@ blockquote {
   margin-top:1%;
   margin-left:16%;
 }
+
 #sverom{
   font-size: 30px;
 }
@@ -698,3 +733,6 @@ blockquote {
 .nav-link{
   color:white
 }
+
+
+/* MEDIA QUERIES */
