@@ -35,13 +35,13 @@
 
 
 -->
-<header id="header" class="bg-deffer w-100 " style="background-image: url(slike/footer.jpg);">
+<!--header id="header" class="bg-deffer w-100 " style="background-image: url(slike/footer.jpg);">
     <div class="container-fluid">
         <nav class="navbar navbar-extend-md justify-content-center" id="navbar">
-            <!--button class="navbar-toggler" id="meni" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="padajuci()">
+            <button class="navbar-toggler" id="meni" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="padajuci()">
                 <span class="navbar-toggler-icon"></span>
-            </button--->
-            <!--div class="collapse navbar-collapse" id="padajuci-meni"--->
+            </button>
+            <div class="collapse navbar-collapse" id="padajuci-meni">
             <div>       
             <ul class="nav">
                         <li class="nav-item depth-0 menu-item--page menu-item--active md-1">
@@ -80,6 +80,49 @@
             </div>
         </nav> 
     </div>
+</header-->
+
+<header>
+    <nav class="navbar navbar-expand-lg" style="background-image: url(slike/footer.jpg)">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Лого</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Насловна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vesti.html">Вести</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="istorijat.html">О Храму</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hor.html">Хор</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ceremonije_i_obredi.html">Церемоније и обреди</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Галерија</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kalendar.html">Календар</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Контакт</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Претражи" aria-label="Претражи">
+              <button class="input-group-text dugme" type="submit"><i class="fa fa-search"></i></button></input>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>
 
 <!--
@@ -93,7 +136,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="slike/IMG_2545.JPG" class=" d-block w-100" alt="First">
+                <img src="slike/IMG_2545.JPG" class="d-block w-100" alt="First">
               </div>
               <div class="carousel-item">
                 <img src="slike/IMG_2555.JPG" class="d-block w-100 " alt="Second">
@@ -116,20 +159,18 @@
 
 
 -->
-
-<div class="hero">
-    <div class="hero-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 id="hram" style="text-align: left;">Храм Свете Петке</h1>
-                    <p id="sverom"style="text-align: left;"><strong>С вером у Бога</strong></p>
-                </div>
+<section>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="container">
+                    <div class="col-md-7">
+                        <h1 id="hram" style="text-align: left;">Храм Свете Петке</h1>
+                        <p id="sverom"style="text-align: left;"><strong>С вером у Бога</strong></p>
+                    </div>
             </div>
         </div>
     </div>
-</div>>
-
+</section>
 <!--
 
 =================================================================================================
@@ -339,37 +380,35 @@
                     </div>
                 </div>
             </article>
-           
         </div> 
     </div>
 </div>
 </section>
-<!--Footer-->
 
-  <footer id="footer" class="bg-deffer w-100 mt-2" style="background-image: url(slike/footer.jpg);">
+<!--Footer-->
+<footer id="footer" class="d-flex flex-wrap bg-deffer w-100 align-items-center border-top mt-2" style="background-image: url(slike/footer.jpg);">
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-10 col-md-5 col-lg-4 m-3 p-3">
-                        <a href="#" class="fa fa-google"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100064502183848" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                    </div>
-                    <div class="col-10 col-md-6 col-lg-3 m-2">
-                        <br>
-                        <p class="paragraf text-white text-center"> Zoran Jovic| Copyright 2022</p>
-                        <p class="paragraf text-white text-center">crkvasvetapetka@crkva.rs</p>
-                    </div>
-                    <div class="col-10 col-md-8 col-lg-4 m-2">
-                        <p class="paragraf text-white text-right">
-                            <br />Контакт
-                            <br />Број телефона: 011 555333
-                            <br />Е-пошта: ordinacija@gmail.com
-                            <br />Адреса: Nema ulice BB, Novi Beograd
-                        </p>
-                    </div>
+                <div class="col-10 col-md-5 col-lg-4 mb-3 p-5">
+                    <a href="#" class="social-media fa fa-google"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100064502183848" class="social-media fa fa-facebook"></a>
+                    <a href="#" class="social-media fa fa-instagram"></a>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 m-2">
+                    <br>
+                    <p class="paragraf text-white text-center"> Zoran Jovic| Copyright 2022</p>
+                    <p class="paragraf text-white text-center">crkvasvetapetka@crkva.rs</p>
+                </div>
+                <div class="col-10 col-md-5 col-lg-4 justify-content-end list-unstyled d-flex">
+                    <p class="paragraf text-white text-right">
+                        <br />Контакт
+                        <br />Број телефона: 011 555333
+                        <br />Е-пошта: ordinacija@gmail.com
+                        <br />Адреса: Nema ulice BB, Novi Beograd
+                    </p>
+                </div>
             </div>
         </div>
-    
 </footer>
 
 </body>
