@@ -35,8 +35,6 @@ a:hover{
   background: #dcdcdc;
   color: white;
   font-size: 17px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
@@ -712,7 +710,10 @@ blockquote {
 
 .hero .hero-content {
   position: absolute;
-  top: 50%;
+  width:68%;
+  margin-top:1%;
+  margin-left:22%;
+  top: 35%;
   left: 10%;
   right: 0;
   -webkit-transform: translateY(-50%);
@@ -724,15 +725,20 @@ blockquote {
  
 }
 
+.nav-link{
+  color:white
+}
+
+/* FOOTER */
 .footer {
   padding: 60px 0;
   position:fixed;
   width:100%;
   bottom: 0;
 }
-.nav-link{
-  color:white
-}
 
+.social-media{
+  margin-right: 30px;
+}
 
 /* MEDIA QUERIES */
