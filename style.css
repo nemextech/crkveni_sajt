@@ -30,6 +30,10 @@ a:hover{
   text-decoration: none;
 }
 
+li {
+  margin-right: 30px;
+}
+
 .dugme{
   float: left;
   padding: 10px;
@@ -697,33 +701,9 @@ blockquote {
   margin: 0px;
 }
 .carousel-inner{
-  width:68%;
+  width:80%;
   margin-top:1%;
-  margin-left:16%;
-}
-
-#sverom{
-  font-size: 30px;
-}
-#hram{
-  font-size: 60px;
-}
-
-.hero .hero-content {
-  position: absolute;
-  width:68%;
-  margin-top:1%;
-  margin-left:22%;
-  top: 35%;
-  left: 10%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.hero {
-  color:#c7a658;
- 
+  margin-left:10%;
 }
 
 .nav-link{
@@ -743,60 +723,40 @@ blockquote {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
-  .pretraga2{
-      display:block;
-  }
-  .pretraga1{
-      display:none;
-  }
-  header{
-      display: none;
-  }
-  footer
-  {
-      margin-left:0;
-      width:100%;
-  }
-  .meni
-  {
-      display:block;
-  }
-  .slika-heder
-  {
-      height: 60px;
-      width:80px;
-  }
+[class*="col-"] {
+  width: 100%;
 }
-@media screen and (max-width: 991px)
-{
-  .navigacioni-meni{
-      width:100%;
-      opacity:1;
-  }
-  .navigacioni-meni li{
-      font-size:32px;
-  }
-  .izlaz{
-      font-size:40px;
-  }
-  @media (min-width: 1024px) {
-      .contact4 .contact-box {
-      padding: 80px 105px 80px 0px;
-      }
-  }
 
-  @media (max-width: 767px) {
-      .contact4 .contact-box {
-      padding-left: 15px;
-      padding-right: 15px;
-      }
-  }
+@media only screen and (min-width: 768px) {
+  /* For mobile: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
 
-  @media (max-width: 1023px) {
-      .contact4 .right-image {
-              position: relative;
-              bottom: -95px;
-      }
-  }
+@media only screen and (min-width: 790px) {
+  /* For ipad: */
+
+  li{width: 100%;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
