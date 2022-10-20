@@ -6,6 +6,7 @@ body{
   background:#DCDCDC;
   font-size: 1rem;
 }
+
 .aligncenter {
   display: block;
   margin: .5rem auto;
@@ -742,3 +743,60 @@ blockquote {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .pretraga2{
+      display:block;
+  }
+  .pretraga1{
+      display:none;
+  }
+  header{
+      display: none;
+  }
+  footer
+  {
+      margin-left:0;
+      width:100%;
+  }
+  .meni
+  {
+      display:block;
+  }
+  .slika-heder
+  {
+      height: 60px;
+      width:80px;
+  }
+}
+@media screen and (max-width: 991px)
+{
+  .navigacioni-meni{
+      width:100%;
+      opacity:1;
+  }
+  .navigacioni-meni li{
+      font-size:32px;
+  }
+  .izlaz{
+      font-size:40px;
+  }
+  @media (min-width: 1024px) {
+      .contact4 .contact-box {
+      padding: 80px 105px 80px 0px;
+      }
+  }
+
+  @media (max-width: 767px) {
+      .contact4 .contact-box {
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+  }
+
+  @media (max-width: 1023px) {
+      .contact4 .right-image {
+              position: relative;
+              bottom: -95px;
+      }
+  }
+}
