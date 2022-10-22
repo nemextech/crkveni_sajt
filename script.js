@@ -9,3 +9,7 @@ function padajuci(){
 $('.carousel').carousel({
   interval: 1000 * 2
 });
+
+//KALENDAR
+
+// ========================== KRAJ ================================
