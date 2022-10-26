@@ -25,6 +25,14 @@ a {
   color:#c7a658;
 }
 
+a.nav-link:hover{
+  color: #c7a658;
+}
+
+.icon:hover{
+  fill: #c7a658;
+}
+
 a:hover{
   text-decoration: underline;
   transition: all .3s ease;
