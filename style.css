@@ -746,7 +746,15 @@ blockquote {
 .social-media{
   margin-right: 30px;
 }
+a.page-link.active{
+  background-color: #091a46;
+  color: white;
 
+}
+.btn.btn-primary{
+  background-color: #091a46;
+  color: white;
+}
 /*============================KALENDAR===============================*/
 
 .row-striped:nth-of-type(odd){
@@ -765,3 +773,6 @@ blockquote {
 /*===================================================================*/
 
 /* MEDIA QUERIES */
+@media screen () {
+  
+}
