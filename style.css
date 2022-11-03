@@ -33,6 +33,15 @@ a.nav-link:hover{
   fill: #c7a658;
 }
 
+.navbar .navbar-toggler:focus {
+  color: white;
+}
+
+.navbar .navbar-toggler{
+  filter: invert(100%)
+}
+
+
 a:hover{
   text-decoration: underline;
   transition: all .3s ease;
