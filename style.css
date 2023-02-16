@@ -29,6 +29,12 @@ a.nav-link:hover{
   color: #c7a658;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
 .icon:hover{
   fill: #c7a658;
 }
@@ -69,6 +75,7 @@ li {
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
+
 
 .dugme:hover{
   color: #091a46;
@@ -725,6 +732,8 @@ blockquote {
 .pagination {
   margin: 0px;
 }
+
+
 .carousel-inner{
   width:80%;
   margin-top:1%;
@@ -773,6 +782,131 @@ a.page-link.active{
 /*===================================================================*/
 
 /* MEDIA QUERIES */
-@media screen () {
-  
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  /* CSS styles for extra small devices */
 }
+
+/* Small devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* CSS styles for small devices */
+}
+
+/* Medium devices (laptops, desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* CSS styles for medium devices */
+}
+
+/* Large devices (large laptops, desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS styles for large devices */
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* CSS styles for extra large devices */
+}
+
+/* YT video */
+@media (max-width: 768px) {
+  .content-page {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/*  HEADER  */
+/* Default styles for all devices */
+.header {
+  background-image: url(slike/footer.jpg);
+}
+
+/* Styles for screens smaller than 576 pixels (extra small devices) */
+@media (max-width: 575.98px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link {
+    padding: 0.5rem;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* Styles for screens between 576 and 767 pixels (small devices) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styles for screens between 768 and 991 pixels (medium devices) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/*  FOOTER  */
+/* Extra small devices (phones) */
+@media only screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
+  .nav {
+    margin-top: 1rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .col-md-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* Extra large devices (larger desktops) */
+@media only screen and (min-width: 1400px) {
+  .col-md-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+
