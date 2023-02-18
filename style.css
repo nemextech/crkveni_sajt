@@ -966,6 +966,12 @@ a.page-link.active{
 
                                           /*  FOOTER  */
 /* Extra small devices (phones) */
+@media only screen and (max-width: 320px) {
+  span{
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   footer {
     flex-direction: column;
