@@ -13,6 +13,38 @@ body{
   height: auto;
 }
 
+.container{
+    max-width: 100%;
+}
+
+/* Set margins for card columns and remove margin for last column */
+.row > [class*='col-'] {
+  margin-bottom: 1rem;
+}
+.row > [class*='col-']:last-child {
+  margin-bottom: 0;
+}
+
+/* Set styles for cards */
+.card {
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+
 .center {
   display: block;
   margin-left: auto;
@@ -726,7 +758,8 @@ blockquote {
 .pagination-wrap {
   width: 100%;
   float: left;
-  margin-bottom: 35px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .pagination {
@@ -821,7 +854,31 @@ a.page-link.active{
   }
 }
 
-/*  HEADER  */
+/* GALERIJA */
+/* Set media queries to adjust the display of columns at different screen sizes */
+@media (max-width: 991.98px) {
+  /* Make all columns take up full width and remove margins */
+  .row > [class*='col-'] {
+    margin-bottom: 0;
+  }
+  .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Add margins back to columns and restore their original width */
+  .row > [class*='col-'] {
+    margin-bottom: 1rem;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+                                        /*  HEADER  */
 /* Default styles for all devices */
 .header {
   background-image: url(slike/footer.jpg);
@@ -844,51 +901,16 @@ a.page-link.active{
   }
 }
 
+
 /* Styles for screens between 576 and 767 pixels (small devices) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 0.1rem;
   }
 }
 
-/* Styles for screens between 768 and 991 pixels (medium devices) */
+/* Styles for screens between 768 and 991 pixels (medium devices)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .nav-link {
-    font-size: 1rem;
-  }
-}
-
-/*  FOOTER  */
-/* Extra small devices (phones) */
-@media only screen and (max-width: 576px) {
-  footer {
-    flex-direction: column;
-  }
-  .nav {
-    margin-top: 1rem;
-  }
-}
-
-/* Small devices (landscape phones) */
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-/* Medium devices (tablets) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  footer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .col-md-4 {
-    flex: 1;
-    max-width: 50%;
-  }
-
   .nav {
     width: 100%;
     justify-content: center;
@@ -926,13 +948,49 @@ a.page-link.active{
 
   .nav-link {
     color: #fff;
+    font-size: 1rem;
   }
 
   /* Style the search bar */
   .form-control {
     width: 100%;
   }
+}
 
+@media (min-width: 991.98px) and (max-width: 1219.98px) {
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+                                          /*  FOOTER  */
+/* Extra small devices (phones) */
+@media only screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-md-4 {
+    flex: 1;
+    max-width: 50%;
+  }
 }
 
 /* Large devices (desktops) */
@@ -959,4 +1017,25 @@ a.page-link.active{
   }
 }
 
+                                            /* NEXT AND BEFORE ARROWS */
+@media screen and (max-width: 500px) {
+  .pagination-wrap {
+    padding: 10px;
+  }
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-item {
+    margin: 5px;
+  }
 
+  .pagination-wrap .page-item:first-child a::before {
+    content: "\25B2"; /* Unicode for up arrow */
+    margin-right: 0.5rem;
+  }
+  .pagination-wrap .page-item:last-child a::after {
+    content: "\25BC"; /* Unicode for down arrow */
+    margin-left: 0.5rem;
+  }
+}
