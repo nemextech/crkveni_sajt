@@ -905,7 +905,7 @@ a.page-link.active{
 /* Styles for screens between 576 and 767 pixels (small devices) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .nav-link {
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 }
 
